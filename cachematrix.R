@@ -1,3 +1,6 @@
+##Author: Liam Callaway
+##Date Edited: 03 February 2016
+
 ## The following functions are used to optimise repeated (computatinoally-expensive) matrix inverse calculations.
 ## This is achieved by the use of caching, where once a value is calculated, it is stored in a list for retrieval in futture calculations.
 
@@ -7,7 +10,7 @@
 
 makeCacheMatrix <- function(x = matrix()) {
 
-	inverse <- NULL
+    inverse <- NULL
     set <- function(y) {
             x <<- y
             inverse <<- NULL
